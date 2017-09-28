@@ -1,13 +1,14 @@
 <!doctype html><meta charset="utf-8">
 <body>
- < id="myChar" img src="./doll.png">
+	<div id = "myChar" style="transition: all 1s"> 
+	<img src="doll.png" style="width:125px; margin-top: 100px;">
 	0<input type = "range" id ="myPicker" min="100" max="500">500
 	<div id="rangeValue"></div>
 	<script>
 	myPicker.onchange = function(){
 		myChar.style.marginLeft = myChar.value +"px";
 		rangeValue.innerHTML = myPicker.value;
-	}
+	} 
 
 </script>
 </body>	
